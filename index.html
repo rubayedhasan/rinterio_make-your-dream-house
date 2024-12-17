@@ -34,7 +34,7 @@
               manrope: ["Manrope", "sans-serif"],
             },
             colors: {
-              clifford: "#da373d",
+              "rinterio-primary-bg": "#ABEF5F",
             },
           },
         },
@@ -47,7 +47,7 @@
   <body class="font-manrope bg-[#F4F4F4]">
     <!-- header section  -->
     <header
-      class="bg-gradient-to-t from-white to-white/0 px-5 pt-8 sm:px-0 md:pt-10 lg:pt-12"
+      class="bg-gradient-to-t from-white to-white/0 px-5 pt-8 sm:px-0 md:pt-10"
     >
       <!-- content container  -->
       <div class="mx-auto sm:w-11/12 lg:w-[96%] xl:w-11/12">
@@ -59,7 +59,7 @@
                 class="inline-flex cursor-pointer items-center text-2xl font-extrabold text-[#212121] lg:text-3xl"
               >
                 <span
-                  class="mr-2.5 flex h-8 w-8 items-center justify-center rounded-full bg-[#ABEF5F] font-extrabold"
+                  class="bg-rinterio-primary-bg mr-2.5 flex h-8 w-8 items-center justify-center rounded-full font-extrabold"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@
               <!-- book button  -->
               <button
                 type="button"
-                class="btn hidden rounded-3xl bg-[#ABEF5F] font-extrabold text-[#1C1C1C] duration-300 ease-in-out hover:bg-lime-500/85 md:flex lg:text-xl"
+                class="btn bg-rinterio-primary-bg hidden rounded-3xl font-extrabold text-[#1C1C1C] duration-300 ease-in-out hover:bg-lime-500/85 md:flex lg:text-xl"
               >
                 Book Consult
 
@@ -163,6 +163,61 @@
             </div>
           </div>
         </nav>
+
+        <!-- section: banner  -->
+        <section
+          id="banner"
+          class="lg:pt14 flex flex-col items-center justify-center gap-6 pt-8 md:pt-12 lg:gap-8"
+        >
+          <!-- banner image container -->
+          <div>
+            <figure>
+              <img
+                src="./images/banner.png"
+                alt="house"
+                class="w-full object-scale-down"
+              />
+            </figure>
+          </div>
+          <!-- banner content container  -->
+          <div class="text-center">
+            <!-- banner title  -->
+            <h1
+              class="text-3xl font-extrabold leading-8 text-[#212121] md:text-4xl md:leading-tight lg:text-6xl"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <!-- banner description  -->
+            <p
+              class="mx-auto mt-6 text-sm font-medium leading-6 text-[#494949] md:w-3/4 md:text-base md:leading-7"
+            >
+              "Experience the perfect fusion of rustic charm and modern elegance
+              with our custom barn house designs, crafted to offer both timeless
+              beauty and exceptional functionality for your dream home."
+            </p>
+
+            <!-- view details button  -->
+            <div class="mt-8 flex items-center justify-center">
+              <button
+                type="button"
+                class="btn bg-rinterio-primary-bg w-full rounded-3xl bg-opacity-70 text-xl font-bold text-[#212121] duration-300 ease-in-out hover:bg-lime-500/85 md:w-auto"
+              >
+                View Details
+
+                <!-- arrow icon  -->
+                <div class="avatar placeholder ml-1.5">
+                  <div
+                    class="bg-rinterio-primary-bg w-8 rounded-full text-[#1C1C1C]"
+                  >
+                    <span class="text-xs lg:text-base"
+                      ><i class="fa-solid fa-arrow-right-long -rotate-45"></i
+                    ></span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </header>
 
