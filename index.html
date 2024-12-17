@@ -44,10 +44,126 @@
     <!-- stylesheet link  -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope bg-[#F4F4F4]">
     <!-- header section  -->
-    <header>
-      <h1 class="text-primary text-5xl md:text-center">Welcome to Rinterio</h1>
+    <header
+      class="bg-gradient-to-t from-white to-white/0 px-5 pt-8 sm:px-0 md:pt-10 lg:pt-12"
+    >
+      <!-- content container  -->
+      <div class="mx-auto sm:w-11/12 lg:w-[96%] xl:w-11/12">
+        <!-- section: navbar  -->
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start lg:w-[25%] xl:w-[50%]">
+              <a
+                class="inline-flex cursor-pointer items-center text-2xl font-extrabold text-[#212121] lg:text-3xl"
+              >
+                <span
+                  class="mr-2.5 flex h-8 w-8 items-center justify-center rounded-full bg-[#ABEF5F] font-extrabold"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="#1C1C1C"
+                    class="size-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                Rinterio</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 duration-300 ease-in-out">
+                <li>
+                  <a class="font-extrabold text-[#494949] xl:text-lg">Home</a>
+                </li>
+                <li>
+                  <a class="font-extrabold text-[#737373] xl:text-lg"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a class="font-extrabold text-[#737373] xl:text-lg"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a class="font-extrabold text-[#737373] xl:text-lg">Blogs</a>
+                </li>
+                <li>
+                  <a class="font-extrabold text-[#737373] xl:text-lg"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <!-- search button  -->
+              <button
+                type="button"
+                class="btn btn-md btn-circle mr-4 hidden bg-white duration-300 ease-in-out hover:bg-slate-100 md:flex"
+              >
+                <i class="fa-solid fa-magnifying-glass text-[#737373]"></i>
+              </button>
+              <!-- cart button  -->
+              <button
+                type="button"
+                class="btn btn-md btn-circle mr-4 hidden bg-white duration-300 ease-in-out hover:bg-slate-100 md:flex"
+              >
+                <i class="fa-solid fa-cart-shopping text-[#737373]"></i>
+              </button>
+
+              <!-- book button  -->
+              <button
+                type="button"
+                class="btn hidden rounded-3xl bg-[#ABEF5F] font-extrabold text-[#1C1C1C] duration-300 ease-in-out hover:bg-lime-500/85 md:flex lg:text-xl"
+              >
+                Book Consult
+
+                <!-- arrow icon  -->
+                <div class="avatar placeholder ml-2.5">
+                  <div class="w-8 rounded-full bg-[#1C1C1C] text-white">
+                    <span class="text-xs lg:text-base"
+                      ><i class="fa-solid fa-arrow-right-long -rotate-45"></i
+                    ></span>
+                  </div>
+                </div>
+              </button>
+
+              <!-- dropdown menu  -->
+              <div class="dropdown md:ml-6 lg:ml-0">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-sm md:btn-md btn-circle bg-white lg:hidden"
+                >
+                  <i class="fa-solid fa-bars text-[#737373] md:text-lg"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box right-0 z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a class="font-extrabold text-[#494949]">Home</a></li>
+                  <li><a class="font-extrabold text-[#737373]">Services</a></li>
+                  <li>
+                    <a class="font-extrabold text-[#737373]">Portfolio</a>
+                  </li>
+                  <li><a class="font-extrabold text-[#737373]">Blogs</a></li>
+                  <li>
+                    <a class="font-extrabold text-[#737373]">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- main section  -->
@@ -55,5 +171,11 @@
 
     <!-- footer section  -->
     <footer></footer>
+
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/ff87b718c4.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
