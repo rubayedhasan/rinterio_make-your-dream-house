@@ -228,10 +228,18 @@
         <div class="mx-auto sm:w-11/12 lg:w-[96%] xl:w-11/12">
           <!-- about us container  -->
           <div
-            class="flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-9"
+            class="flex flex-col items-center justify-center gap-6 lg:relative lg:flex-row lg:gap-9"
           >
+            <!-- indicator arrow block  -->
+            <div class="absolute -left-10 -top-12 hidden w-24 lg:block">
+              <img
+                src="./images/indicator-arrow.png"
+                alt="arrow to indicate"
+                class="w-full object-scale-down"
+              />
+            </div>
             <!-- about content container -->
-            <div class="space-y-6 lg:flex-1">
+            <div class="space-y-6 text-center lg:flex-1 lg:text-left">
               <!-- section view more button  -->
               <button
                 class="btn btn-sm rounded-3xl bg-white font-bold text-[#4949494]"
@@ -257,7 +265,7 @@
 
               <!-- our subscription block  -->
               <div
-                class="our-subscribtion grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 lg:gap-6"
+                class="our-subscribtion grid grid-cols-1 gap-4 text-left md:grid-cols-2 lg:grid-cols-1 lg:gap-6"
               >
                 <!-- commercial block  -->
                 <div
